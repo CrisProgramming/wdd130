@@ -2,21 +2,18 @@
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font); 
-  color: var(--primary-color); 
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
-
 
 header {
   padding: 20px;
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
 }
-
 
 p {
-  padding: 25px; 
+  padding: 25px;
 }
-
 
 nav {
   background-color: var(--nav-background-color);
@@ -40,7 +37,6 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-
 body {
   font-family: var(--paragraph-font);
   max-width: 960px;
@@ -51,7 +47,8 @@ body {
   --primary-color: #ff6700;
   --secondary-color: #ebebeb;
   --accent-color: #c0c0c0;
-  --additional-accent-color: #3a6ea5;
+  --accent1-color: #3a6ea5; 
+  --accent2-color: #004e98; 
   
   --heading-font: 'Trirong', sans-serif;
   --paragraph-font: 'Trirong', sans-serif;
@@ -60,4 +57,4 @@ body {
   --nav-link-color: #ebebeb;
   --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #3a6ea5;
-} 
+}
