@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
 
-/* Grouping selector for all headings */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font); 
   color: var(--primary-color); 
@@ -8,16 +8,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
-  padding: 20px; /* Adds padding to the header */
-  background-color: var(--accent-color); /* Sets the background color of the header using your selected accent color */
+  padding: 20px;
+  background-color: var(--accent-color); 
 }
 
-/* Paragraph */
+
 p {
-  padding: 25px; /* Adds padding to paragraphs */
+  padding: 25px; 
 }
 
-/* navigation */
+
 nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
@@ -60,6 +60,4 @@ body {
   --nav-link-color: #ebebeb;
   --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #3a6ea5;
-}
-
-  
+} 
