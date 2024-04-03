@@ -8,28 +8,36 @@
 /* Layout */
 main {
     max-width: 840px;
+    margin: 0 auto; /* Centering the content */
 }
 
 /* Navigation */
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* shorthand for white */
 }
 
 /* Headings */
 h1 {
     color: steelblue;
+    border-bottom: 2px solid steelblue; /* Adding bottom border */
 }
 
 /* Images */
 img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     border: 1px solid steelblue;
     box-shadow: 0 0 30px gray;
@@ -48,17 +56,37 @@ aside {
 
 aside h2 {
     position: absolute; 
-    top: 50%; /* Center vertically */
-    left: 15%; /* Center horizontally */
-    transform: translate(-50%, -50%);
+    top: 0; /* Align to top */
+    right: 0; /* Align to right */
     color: white; 
-    background-color: #00000080; 
+    background-color: steelblue; 
     padding: 5px;
+    margin: 0; /* Remove default margin */
 }
 
 aside img {
     width: 30%; /* Ensure the image takes full width of its container */
     height: auto;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto; /* Centering the content */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr; /* Define columns, aside width and main taking up remaining space */
+    align-items: center; /* Align items vertically */
+}
+
+main {
+    margin: 1rem; /* Add margin for spacing */
+}
+
+aside {
+    width: 20rem; /* Set width for aside */
+    position: relative;
 }
 
 footer {
@@ -77,7 +105,9 @@ footer {
     background-color: #f0f0f0; 
     color: #333;
 }
+
 /* Additional rule for main images */
 main img {
     float: right;
 }
+
