@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #ff6700;
+  --secondary-color: #333; /* Change secondary color to a darker shade */
+  --accent-color: #c0c0c0;
+  --accent1-color: #3a6ea5;
+  --accent2-color: #004e98;
+
+  --heading-font: 'Trirong', sans-serif;
+  --paragraph-font: 'Trirong', sans-serif;
+
+  --nav-background-color: #004e98;
+  --nav-link-color: #ebebeb;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #3a6ea5;
+}
+
+/* Styling headings and paragraph elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color); /* Use the secondary color for text */
+  padding: 25px;
+}
+
+/* Styling header */
+header {
+  padding: 20px;
+  background-color: var(--accent-color);
+}
+
+/* Styling navigation */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Remove underlines from social media links */
+.sociallinks a {
+  text-decoration: none;
+}
+
+/* Limit entire width of the page */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto; /* Center content */
+  padding: 20px;
+}
+
+/* Style the Hero Container using Position Absolute */
+.hero {
+  position: relative;
+}
+
+/* Style the hero image */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Position the h1 heading absolutely */
+.hero h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(235, 94, 0); /* Adjust color for better visibility */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 1px; /* Add rounded corners for a nicer look */
+  z-index: 1; /* Ensure h1 appears above other content */
+}
+
+/* Position the article absolutely */
+.hero article {
+  position: absolute;
+  bottom: 1px; /* Adjust the distance from the bottom */
+  left: 50%; /* Center the article horizontally */
+  transform: translateX(-50%); /* Center the article horizontally */
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the opacity and color of the background */
+  padding: 5px;
+  max-width: 60%; /* Adjust the maximum width percentage as needed */
+  color: var(--secondary-color); /* Use the secondary color for text */
+  z-index: 1; /* Ensure article appears above other content */
+  
+  /* Flexbox */
+  display: flex; /* Display children horizontally */
+  justify-content: space-between; /* Distribute space between children */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style the image inside the article */
+.hero article img {
+  max-width: 100px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the paragraph inside the article */
+.hero article p {
+  font-size: 14px; /* Adjust the font size of the paragraph */
+  margin: 0; /* Remove default margin */
+}
