@@ -1,16 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
-
 /* Define CSS variables */
 :root {
   --primary-color: #ff6700;
-  --secondary-color: #333; /* Change secondary color to a darker shade */
+  --secondary-color: #333;
   --accent-color: #c0c0c0;
-  --accent1-color: #3a6ea5;
-  --accent2-color: #004e98;
-
-  --heading-font: 'Trirong', sans-serif;
-  --paragraph-font: 'Trirong', sans-serif;
-
   --nav-background-color: #004e98;
   --nav-link-color: #ebebeb;
   --nav-hover-link-color: #ffffff;
@@ -25,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--secondary-color); /* Use the secondary color for text */
+  color: var(--secondary-color);
   padding: 25px;
 }
 
@@ -33,6 +25,13 @@ p {
 header {
   padding: 20px;
   background-color: var(--accent-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+header img {
+  max-width: 150px;
 }
 
 /* Styling navigation */
@@ -126,4 +125,52 @@ body {
 .hero article p {
   font-size: 14px; /* Adjust the font size of the paragraph */
   margin: 0; /* Remove default margin */
+}
+
+/* Styling sections */
+section {
+  padding: 20px;
+}
+
+section h2 {
+  color: var(--primary-color);
+}
+
+/* Styling adventures section */
+.adventures {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.adventures figure {
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.adventures img {
+  max-width: 100%;
+  height: auto;
+}
+
+.adventures figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling footer */
+footer {
+  background-color: var(--accent-color);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+}
+
+footer img {
+  width: 30px; /* Adjust width as needed */
+  height: auto;
+  margin-left: 10px;
 }
