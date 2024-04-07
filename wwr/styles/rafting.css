@@ -1,6 +1,6 @@
 /* Define CSS variables */
 :root {
-  --primary-color: #ff6700;
+  --primary-color: #ff6700; /* Adjust primary color for headings */
   --secondary-color: #333;
   --accent-color: #c0c0c0;
   --nav-background-color: #004e98;
@@ -12,8 +12,9 @@
 /* Styling headings and paragraph elements */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: #000; /* Adjust to a darker color for better contrast */
 }
+
 
 p {
   font-family: var(--paragraph-font);
@@ -133,7 +134,7 @@ section {
 }
 
 section h2 {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Adjust primary color for better contrast */
 }
 
 /* Styling adventures section */
